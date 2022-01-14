@@ -15,8 +15,35 @@ a:hover {
     color: #3C40AE !important;
 }
 
+ul {
+    list-style-type: none;
+}
+
 body {
     background-color:#171718;
+}
+
+input {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    height: 60px;
+    color: #ffffff;
+    font-size: 16px;
+    background-color: #171718;
+    border: 1px solid #A0A0A1;
+    border-radius: 8px;
+}
+
+textarea {
+    padding: 16px 20px 16px 20px;
+    width: 100%;
+    height: 150px;
+    color: #ffffff;
+    font-size: 16px;
+    background-color: #171718;
+    border: 1px solid #A0A0A1;
+    border-radius: 8px;
 }
 
 .navbar {
@@ -43,12 +70,10 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 4rem;
-    padding-bottom: 8rem;
 }
 
-.projects-container{
-    padding: 4rem 0 8rem 0;
+.margin-block{
+    margin: 4rem 0 8rem 0;
 }
 
 .projects-container h3{
@@ -73,6 +98,36 @@ body {
     height: 100px;
     margin-bottom: 1rem;
 
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form {
+    background-color: #26292D;
+    border-radius: 8px;
+    width: 450px;
+    height: 550px;
+}
+
+.contact-form button {
+    width: 100%;
+}
+
+.footer-container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    border-top: 1px solid #26292D;
+    border-bottom: 1px solid #26292D;
+}
+
+.socials img {
+    width: 50px;
+    height: 50px;
 }
 
 .button {
@@ -126,51 +181,65 @@ body {
     border-bottom: 3px solid #5C62EC;
 }
 
+.accent {
+    color: #85BFD1 !important;
+}
+
 /* Fonts Style */
 h1 {
     font-weight: bold;
     font-size: 60px;
     line-height: 71px;
+    color: #ffffff;
 }
 h2 {
     font-weight: 500;
     font-size: 48px;
     line-height: 57px;
+    color: #ffffff;
 }
 h3 {
     font-weight: 500;
     font-size: 34px;
     line-height: 40px;
+    color: #ffffff;
 }
 h4 {
     font-weight: normal;
     font-size: 24px;
     line-height: 32px;
+    color: #ffffff;
 }
 h5 {
     font-weight: 500 !important;
     font-size: 20px !important;
     line-height: 24px !important;
+    color: #ffffff;
 }
 .subtitle-1 {
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
+    color: #ffffff;
 }
 .subtitle-2 {
     font-weight: 500;
     font-size: 14px;
     line-height: 24px;
+    color: #ffffff;
 }
 .body-1 {
     font-weight: normal;
     font-size: 16px;
     line-height: 28px;
+    color: #ffffff;
 }
 .body-2 {
     font-weight: normal;
     font-size: 14px;
     line-height: 20px;
+    color: #ffffff;
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -208,6 +277,11 @@ h5 {
         align-items: center;
     }
 
+    .footer-container {
+        display: flex;
+        justify-content: center;
+    }
+
     .row-cols-3>* {
         width: 290px !important;
     }
@@ -229,6 +303,12 @@ h5 {
     .adaptive {
         padding-left: 4rem;
         padding-right: 4rem;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .contact-form {
+        width: 410px;
     }
 }
 
@@ -263,5 +343,11 @@ h5 {
     .about-container img {
         width: 328px;
         height: 401px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .contact-form {
+        width: 300px;
     }
 }
