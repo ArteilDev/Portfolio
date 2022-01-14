@@ -69,6 +69,8 @@ body {
 }
 
 .skill-card img {
+    width: 100px;
+    height: 100px;
     margin-bottom: 1rem;
 
 }
@@ -207,13 +209,13 @@ h5 {
     }
 
     .row-cols-3>* {
-        width: 300px !important;
+        width: 290px !important;
     }
 }
 
 @media screen and (max-width: 890px) {
     .row-cols-3>* {
-        width: 280px !important;
+        width: 270px !important;
     }
 }
 
