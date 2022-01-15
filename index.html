@@ -19,19 +19,19 @@
               	<div class="collapse navbar-collapse" id="navbarSupportedContent">
                 	<ul class="navbar-nav ms-auto mb-2">
                   		<li class="nav-item">
-                    		<a class="nav-link text-white active" aria-current="page" href="#">Home</a>
+                    		<a class="home-button nav-link text-white active" aria-current="page">Home</a>
                   		</li>
 						<li class="nav-item">
-                    		<a class="nav-link text-white" aria-current="page" href="#">About</a>
+                    		<a class="about-button nav-link text-white" aria-current="page">About</a>
                   		</li>
 						<li class="nav-item">
-                    		<a class="nav-link text-white" aria-current="page" href="#">Projects</a>
+                    		<a class="projects-button nav-link text-white" aria-current="page">Projects</a>
                   		</li>
 						<li class="nav-item">
-                    		<a class="nav-link text-white" aria-current="page" href="#">Skills</a>
+                    		<a class="skills-button nav-link text-white" aria-current="page">Skills</a>
                   		</li>
 						<li class="nav-item">
-                    		<a class="nav-link text-white" aria-current="page" href="#">Contact Me</a>
+                    		<a class="contact-button nav-link text-white" aria-current="page">Contact Me</a>
                   		</li>
                     </ul>
               	</div>
@@ -45,8 +45,8 @@
 				<h1 class="text-primary">Web-Developer</h1>
 				<h5 class="h5 text-white mt-4">This my Web portfolio</h5>
 				<div class="homepage-buttons flex-row mt-5">
-					<a class="button button-primary px-5">Projects</a>
-					<a class="button button-secondary ms-4">Contact Me</a>
+					<a class="button button-primary projects-button px-5">Projects</a>
+					<a class="button button-secondary contact-button ms-4">Contact Me</a>
 				</div>
 			</div>
 		</div>
@@ -58,7 +58,7 @@
 				  <div class="col-sm">
 					<h1 class="text-white">Marat Tazeev</h1>
 					<p class="body-1 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur doloremque, blanditiis eum, non nobis totam temporibus error voluptate facilis ex molestias officiis, doloribus officia dolore eligendi laboriosam. Qui necessitatibus, iure odit sunt minus et doloribus temporibus neque eligendi sit, quos officia molestias debitis tempora. Possimus quo qui adipisci molestias facilis dolorum fugiat inventore veritatis minus ad culpa, quia dicta aspernatur quae accusamus asperiores aliquid quidem eius odit cupiditate fuga. Odit esse rerum sapiente recusandae eos aut corporis, optio libero delectus voluptatem fuga nemo quaerat, adipisci at, nihil labore doloribus reiciendis. Repudiandae adipisci quisquam pariatur enim culpa voluptate obcaecati ratione possimus.<br/><br/>
-						<a href="#" class="text-primary">arteildev@gmail.com</a>
+						<a href="mailto:arteildev@gmail.com?subject=For Work / По работе" class="text-primary">arteildev@gmail.com</a>
 						</p>
 				  </div>
 			</div>
@@ -115,20 +115,21 @@
 				<h1>Let's Talk!</h1>
 				<p class="subtitle-1">If you are interested in my work or have any concerns, do not hesitate to write me!</p>
 				<div class="contact-form mt-5 p-4 text-start">
-					<form>
+					<form action="mail.php" enctype="multipart/form-data" class="form" method="POST">
+						<input type="hidden" name="admin_email[]" value="arteildev@gmail.com">
 						<div class="mb-4">
 							<label class="body-1 mb-2">Name</label>
-							<input type="text" name="name" id="input_name" placeholder="Email">
+							<input type="text" name="name" data-validate-field="name" placeholder="Name">
 						</div>
 						<div class="mb-4">
 							<label class="body-1 mb-2">Email</label>
-							<input type="email" name="email" id="input_email" placeholder="Example@gmail.com">
+							<input type="email" name="email" data-validate-field="email" placeholder="Example@gmail.com">
 						</div>
 						<div class="mb-3">
-							<label class="body-1 mb-2" for="input_message">Message</label>
-							<textarea name="message" id="input-message" placeholder="Hey...	"></textarea>
+							<label class="body-1 mb-2">Message</label>
+							<textarea name="message" data-validate-field="message" placeholder="Hey..."></textarea>
 						</div>
-						<button class="button button-primary">Send</button>
+						<button class="button button-primary mb-3" type="submit">Send</button>
 					</form>
 				</div>
 			</div>
@@ -142,16 +143,16 @@
 					<div class="col-sm">
 						<ul>
 							<li class="nav-item">
-								<a class="nav-link text-white subtitle-1 accent" aria-current="page" href="#">Home</a>
+								<a class="home-button nav-link text-white subtitle-1 accent" aria-current="page">Home</a>
 							  </li>
 							<li class="nav-item">
-								<a class="nav-link text-white body-2" aria-current="page" href="#">About</a>
+								<a class="about-button nav-link text-white body-2" aria-current="page">About</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-white body-2" aria-current="page" href="#">Projects</a>
+								<a class="projects-button nav-link text-white body-2" aria-current="page">Projects</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-white body-2" aria-current="page" href="#">Skills</a>
+								<a class="skills-button nav-link text-white body-2" aria-current="page">Skills</a>
 							</li>
 						</ul>
 					</div>
@@ -171,6 +172,8 @@
 			<p class="subtitle-2 mt-3">© 2022 Marat Tazeev</p>
 		</footer>
 	</main>
+	<script src="vendor/jquery-3.6.0.min.js"></script>
+	<script src="vendor/just-validate.min.js"></script>
 	<script src="vendor/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
