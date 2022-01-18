@@ -63,11 +63,6 @@ textarea:focus-visible  {
     outline: none;
 }
 
-.form-input.input-error {
-    box-shadow: 0 0 15px #ae3c3c !important;
-}
-
-
 .navbar {
     background-color: #171718;
     border-bottom: 1px solid #26292D;
@@ -105,6 +100,10 @@ textarea:focus-visible  {
 
 .project-cards img {
     margin-bottom: 1.5rem;
+}
+
+.project-cards img:hover {
+    box-shadow: 0 0 15px #3C40AE;
 }
 
 .skill-card {
@@ -153,6 +152,119 @@ textarea:focus-visible  {
     height: 50px;
 }
 
+.thank-you {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Настройки анимации */
+
+.section-title.element-anim {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+    -webkit-transition: all 1.5s;
+    -o-transition: all 1.5s;
+    transition: 1.5s;
+}
+
+.section-title.element-anim.element-show {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.section-subtitle.element-anim  {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+    -webkit-transition: all 1.5s;
+    -o-transition: all 1.5s;
+    transition: 1.5s;
+}
+
+.section-subtitle.element-anim.element-show {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.form.element-anim {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+    -webkit-transition: all 1.5s;
+    -o-transition: all 1.5s;
+    transition: 1.5s;
+}
+
+.form.element-anim.element-show {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.image.element-anim {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+    -webkit-transition: all 1.5s;
+    -o-transition: all 1.5s;
+    transition: 1.5s;
+}
+
+.image.element-anim.element-show {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.image.element-anim:nth-child(2).element-show {
+    -webkit-transition-delay: .25s;
+    -o-transition-delay: .25s;
+    transition-delay: .25s;
+}
+
+.image.element-anim:nth-child(3).element-show {
+    -webkit-transition-delay: .5s;
+    -o-transition-delay: .5s;
+    transition-delay: .5s;
+}
+
+.image.element-anim:nth-child(4).element-show {
+    -webkit-transition-delay: .75s;
+    -o-transition-delay: .75s;
+    transition-delay: .25s;
+}
+
+.button.element-anim {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 1.5s;
+    -o-transition: all 1.5s;
+    transition: 1.5s;
+}
+
+.button.element-anim.element-show {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+/*--------------------*/
 .button {
     padding: 16px 30px 16px 30px;
     font-weight: 500;
@@ -291,7 +403,7 @@ h5 {
         flex-direction: column;
     }
 
-    .row-cols-2 img{
+    .row-cols-2 a{
         width: 100%;
     }
 

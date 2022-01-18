@@ -47,31 +47,26 @@ window.addEventListener('scroll', () => {
 });
 //------------------------------------------------
 
-//----------------Отправка формы-------------------
+//-----------Анимация появления-------------------
 
-let validateForms = function (selector, rules, soccessModal, yaGoal) {
-    new window.JustValidate(selector, {
-        rules: rules,
-        submitHandler: function(form) {
-            let formData = new FormData(form);
+function onEntry(entry) {
+  entry.forEach(change => {
+    if (change.isIntersecting) {
+      change.target.classList.add('element-show')
+    };
+  });
+};
 
-            let xhr = new XMLHttpRequest();
+let options = {
+  threshold: [0.5]
+};
 
-            xhr.onreadystatechange = function() {
-                if (xhr.readyState === 4) {
-                    if (xhr.status === 200) {
-                        console.log('Success');
-                    }
-                }
-            }
+let observer = new IntersectionObserver(onEntry, options);
 
-            xhr.open('POST', 'mail.php', true);
-            xhr.send(formData);
-            form.reset();
-        }
-    });
+let elements = document.querySelectorAll('.element-anim');
+
+for (let elm of elements) {
+  observer.observe(elm);
 }
 
-validateForms('.form', { name: {required: true}, email: {required: true, email: true}, message: {required: true} }, '.thanks-popup', 'send goal' );
-
-//-------------------------------------------------
+//------------------------------------------------
