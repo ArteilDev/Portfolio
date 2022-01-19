@@ -19,20 +19,26 @@
               	<div class="collapse navbar-collapse" id="navbarSupportedContent">
                 	<ul class="navbar-nav ms-auto mb-2">
                   		<li class="nav-item">
-                    		<a class="home-button nav-link text-white active" aria-current="page">Home</a>
+                    		<a class="home-button nav-link text-white active lng-home" aria-current="page">Home</a>
                   		</li>
 						<li class="nav-item">
-                    		<a class="about-button nav-link text-white" aria-current="page">About</a>
+                    		<a class="about-button nav-link text-white lng-about" aria-current="page">About</a>
                   		</li>
 						<li class="nav-item">
-                    		<a class="projects-button nav-link text-white" aria-current="page">Projects</a>
+                    		<a class="projects-button nav-link text-white lng-projects" aria-current="page">Projects</a>
                   		</li>
 						<li class="nav-item">
-                    		<a class="skills-button nav-link text-white" aria-current="page">Skills</a>
+                    		<a class="skills-button nav-link text-white lng-skills" aria-current="page">Skills</a>
                   		</li>
 						<li class="nav-item">
-                    		<a class="contact-button nav-link text-white" aria-current="page">Contact Me</a>
+                    		<a class="contact-button nav-link text-white lng-contacts" aria-current="page">Contact Me</a>
                   		</li>
+						<li class="nav-item">
+							<select class="form-select form-select-sm mt-1" aria-label=".form-select-sm example">
+								<option value="ru" selected>RU</option>
+								<option value="en">EN</option>
+							  </select>
+						</li>
                     </ul>
               	</div>
             </div>
@@ -42,11 +48,11 @@
 		<div class="section homepage">
 			<div class="hero align-self-center">
 				<h1 class="text-white section-title element-anim">Arteil</h1>
-				<h1 class="text-primary section-title element-anim">Web-Developer</h1>
-				<h5 class="h5 text-white mt-4 section-subtitle element-anim">This my Web portfolio</h5>
+				<h1 class="text-primary section-title element-anim lng-web-developer">Web-Developer</h1>
+				<h5 class="h5 text-white mt-4 section-subtitle element-anim lng-portfolio">This my Web portfolio</h5>
 				<div class="homepage-buttons flex-row mt-5">
-					<a class="button button-primary projects-button px-5 element-anim">Projects</a>
-					<a class="button button-secondary contact-button ms-4 element-anim">Contact Me</a>
+					<a class="button button-primary projects-button px-5 element-anim lng-projects-button">Projects</a>
+					<a class="button button-secondary contact-button ms-4 element-anim lng-contacts-button">Contact Me</a>
 				</div>
 			</div>
 		</div>
@@ -56,16 +62,22 @@
 					<img src="img/avatar.png" alt="Avatar" class="avatar image element-anim" width="450px" height="550px">
 				  </div>
 				  <div class="col-sm">
-					<h1 class="text-white section-title element-anim">Marat Tazeev</h1>
-					<p class="body-1 text-white section-subtitle element-anim">Hi everyone, my name is Marat. I am a junior web -developer. Since childhood I like to learn something new, understand new technologies. I tried myself in many areas, such as: game development, 3D modeling, design. Started my career in game development. Making games on Unity was my hobby when I was a student.
+					<h1 class="text-white section-title element-anim lng-name">Marat Tazeev</h1>
+					<p class="body-1 text-white section-subtitle element-anim lng-subtitle">Hi everyone, my name is Marat. I am a junior web -developer. Since childhood I like to learn something new, understand new technologies. I tried myself in many areas, such as: game development, 3D modeling, design. Started my career in game development. Making games on Unity was my hobby when I was a student.
 						<br />Over time I got interested in creating websites and mobile apps. I take most of my knowledge from the Internet, articles, courses, video tutorials.
-						<br />Lately I've been interested in React JS, React Native, Swift.<br/><br/></p>
+						<br />Lately I've been interested in React JS, React Native, Swift.<br/><br/>
+					</p>
+					<!-- <p class="body-1 text-white section-subtitle element-anim">
+						Всем привет, меня зовут Марат. Я джуниор веб-разработчик. С самого детства люблю изучать что-то новое, разбираться в новых технологиях. Пробовал себя во множествах сфер, таких как: разработка игр, 3D моделирование, дизайн. Свой путь в разработке начал с игр. Делать игры на Unity было моим увлечением в студенческие времена.
+						<br />Со временем увлекся созданием сайтов и мобильных приложений. Большинство своих знаний беру из интернета, статьи, курсы, видеоуроки.
+						<br />В последнее время интересуюсь React JS, React Native, Swift
+					</p> -->
 				  </div>
 			</div>
 		</div>
 		<div class="section projects-block margin-block">
 			<div class="projects-container container-lg adaptive">
-				<h3 class="text-white section-title element-anim">Last Projects</h3>
+				<h3 class="text-white section-title element-anim lng-last-projects">Last Projects</h3>
 				<div class="project-cards">
 					<div class="row row-cols-2">
 						<a href="#"><img src="img/project-img.png" class="image element-anim" alt="Project" width="100%"></a>
@@ -75,13 +87,13 @@
 					</div>
 				</div>
 				<div class="text-center pt-3">
-					<a class="button button-primary align-self-end px-5 element-anim">View All <i class="bi bi-arrow-right"></i></a>
+					<a class="button button-primary align-self-end px-5 element-anim lng-view-all">View All <i class="bi bi-arrow-right"></i></a>
 				</div>
 			</div>
 		</div>
 		<div class="section skills-block adaptive margin-block">
 			<div class="skills-container container-lg">
-				<h3 class="text-white mb-5 section-title element-anim">Skills</h3>
+				<h3 class="text-white mb-5 section-title element-anim lng-skills-title">Skills</h3>
 				<div class="row row-cols-3 justify-content-center">
 					<div class="skill-card text-center image element-anim">
 						<img src="img/html.png" alt="HTML">
@@ -112,12 +124,12 @@
 		</div>
 		<div class="section contact-block adaptive margin-block">
 			<div class="contact-container container-lg text-center">
-				<h1 class="section-title element-anim">Let's Talk!</h1>
-				<p class="subtitle-1 section-subtitle element-anim">If you are interested in my work or have any concerns, do not hesitate to write me!</p>
+				<h1 class="section-title element-anim lng-contact-title">Let's Talk!</h1>
+				<p class="subtitle-1 section-subtitle element-anim lng-contact-subtitle">If you are interested in my work or have any concerns, do not hesitate to write me!</p>
 				<div class="contact-form mt-5 p-4 text-start">
 					<form action="mail.php" class="form element-anim" method="POST">
 						<div class="mb-4">
-							<label class="body-1 mb-2">Name</label>
+							<label class="body-1 mb-2 lng-form-name">Name</label>
 							<input type="text" name="name" placeholder="Name">
 						</div>
 						<div class="mb-4">
@@ -125,10 +137,10 @@
 							<input type="email" name="email" placeholder="Example@gmail.com">
 						</div>
 						<div class="mb-3">
-							<label class="body-1 mb-2">Message</label>
+							<label class="body-1 mb-2 lng-form-message">Message</label>
 							<textarea name="message" data-validate-field="message" placeholder="Hey..."></textarea>
 						</div>
-						<button class="button button-primary mb-3 element-anim" type="submit">Send</button>
+						<button class="button button-primary mb-3 element-anim lng-form-button" type="submit">Send</button>
 					</form>
 				</div>
 			</div>
@@ -142,16 +154,16 @@
 					<div class="col-sm">
 						<ul>
 							<li class="nav-item">
-								<a class="home-button nav-link text-white subtitle-1 accent" aria-current="page">Home</a>
+								<a class="home-button nav-link text-white subtitle-1 accent lng-home-footer" aria-current="page">Home</a>
 							  </li>
 							<li class="nav-item">
-								<a class="about-button nav-link text-white body-2" aria-current="page">About</a>
+								<a class="about-button nav-link text-white body-2 lng-about-footer" aria-current="page">About</a>
 							</li>
 							<li class="nav-item">
-								<a class="projects-button nav-link text-white body-2" aria-current="page">Projects</a>
+								<a class="projects-button nav-link text-white body-2 lng-projects-footer" aria-current="page">Projects</a>
 							</li>
 							<li class="nav-item">
-								<a class="skills-button nav-link text-white body-2" aria-current="page">Skills</a>
+								<a class="skills-button nav-link text-white body-2 lng-skills-footer" aria-current="page">Skills</a>
 							</li>
 						</ul>
 					</div>
@@ -159,7 +171,7 @@
 						<h4 class="fw-bold"></h4>
 					</div>
 					<div class="col-sm">
-						<p class="subtitle-1 accent">Social Networks</p>
+						<p class="subtitle-1 accent lng-socials">Social Networks</p>
 						<div class="socials text-start">
 							<a href="https://vk.com/arteilzx" target="_blank"><img src="img/vk.png" alt="VK"></a>
 							<a href="https://t.me/xDevPunk" target="_blank"><img src="img/telegram.png" alt="Telegram"></a>
@@ -173,6 +185,7 @@
 	</main>
 	<script src="vendor/jquery-3.6.0.min.js"></script>
 	<script src="vendor/just-validate.min.js"></script>
+	<script src="vendor/lang.js"></script>
 	<script src="vendor/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

@@ -76,6 +76,21 @@ textarea:focus-visible  {
     color: #ffffff;
 }
 
+.form-select {
+    background-color: #171718;
+    border: none;
+    color:#ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    background-image: url(/img/select.svg) !important;
+}
+
+.form-select:focus {
+    border-color: #3C40AE;
+    box-shadow: 0 0 0 0.2rem #3C40AE;
+}
+
 .homepage {
     display: flex;
     justify-content: center;
