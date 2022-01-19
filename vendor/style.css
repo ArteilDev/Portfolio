@@ -159,6 +159,10 @@ textarea:focus-visible  {
     align-items: center;
 }
 
+.project-page {
+    margin-top: 8rem;
+}
+
 /* Настройки анимации */
 
 .section-title.element-anim {
@@ -320,6 +324,10 @@ textarea:focus-visible  {
     color: #85BFD1 !important;
 }
 
+.grey {
+    color: #A0A0A1;
+}
+
 /* Fonts Style */
 h1 {
     font-weight: bold;
@@ -478,6 +486,10 @@ h5 {
     .about-container img {
         width: 328px;
         height: 401px;
+    }
+
+    .thank-you img {
+        width: 250px;
     }
 }
 
