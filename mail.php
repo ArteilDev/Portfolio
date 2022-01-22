@@ -20,7 +20,7 @@ $mail->Port = 465; // TCP port to connect to / этот порт может от
 
 $mail->setFrom('admin@arteildev.ru'); // от кого будет уходить письмо?
 $mail->addAddress('arteildev@gmail.com');     // Кому будет уходить письмо 
-//$mail->addAddress('ellen@example.com');               // Name is optional
+//$mail->addAddress('ellen@example.com');               // Name is optional1
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
 //$mail->addBCC('bcc@example.com');
