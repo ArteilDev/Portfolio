@@ -40,7 +40,7 @@ const langArr = {
         "en" : "Marat Tazeev"
     },
     "subtitle" : {
-        "ru" : "Всем привет, меня зовут Марат. Я джуниор веб-разработчик. С самого детства люблю изучать что-то новое, разбираться в новых технологиях. Пробовал себя во множествах сфер, таких как: разработка игр, 3D моделирование, дизайн. Свой путь в разработке начал с игр. Делать игры на Unity было моим увлечением в студенческие времена. <br />Со временем увлекся созданием сайтов и мобильных приложений. Большинство своих знаний беру из интернета, статьи, курсы, видеоуроки. <br />В последнее время интересуюсь React JS, React Native, Swift",
+        "ru" : "Всем привет, меня зовут Марат. Я начинающий веб-разработчик. С самого детства люблю изучать что-то новое, разбираться в новых технологиях. Пробовал себя во множествах сфер, таких как: разработка игр, 3D моделирование, дизайн. Свой путь в разработке начал с игр. Делать игры на Unity было моим увлечением в студенческие времена. <br />Со временем увлекся созданием сайтов и мобильных приложений. Большинство своих знаний беру из интернета, статьи, курсы, видеоуроки. <br />В последнее время интересуюсь React JS, React Native, Swift",
         "en" : "Hi everyone, my name is Marat. I am a junior web -developer. Since childhood I like to learn something new, understand new technologies. I tried myself in many areas, such as: game development, 3D modeling, design. Started my career in game development. Making games on Unity was my hobby when I was a student. <br />Over time I got interested in creating websites and mobile apps. I take most of my knowledge from the Internet, articles, courses, video tutorials. <br />Lately I've been interested in React JS, React Native, Swift."
     },
     "last-projects" : {
