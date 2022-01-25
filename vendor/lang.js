@@ -61,7 +61,7 @@ const langArr = {
     },
     "contact-subtitle" : {
         "ru" : "Если вас заинтересовали мои работы или у вас есть какие-либо вопросы, не стесняйтесь, пишите мне!",
-        "end" : "If you are interested in my work or have any concerns, do not hesitate to write me!"
+        "en" : "If you are interested in my work or have any concerns, do not hesitate to write me!"
     },
     "form-name" : {
         "ru" : "Имя",

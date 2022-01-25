@@ -94,7 +94,10 @@ function changeLanguage () {
  	}
 	select.value = hash;
 	for (let key in langArr) {
-		document.querySelector('.lng-'+key).innerHTML = langArr[key][hash];
+		let elem = document.querySelector('.lng-'+key);
+		if (elem) {
+			elem.innerHTML = langArr[key][hash];
+		}
 	}
 }
 
