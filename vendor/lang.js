@@ -20,8 +20,8 @@ const langArr = {
         "en" : "Contact Me"
     },
     "web-developer" : {
-        "ru" : "Веб-Разработчик",
-        "en" : "Web-Developer"
+        "ru" : "ВЕБ-РАЗРАБОТЧИК",
+        "en" : "WEB-DEVELOPER"
     },
     "portfolio" : {
         "ru" : "Это моё портфолио",
