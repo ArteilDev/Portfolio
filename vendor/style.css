@@ -83,7 +83,7 @@ textarea:focus-visible  {
     font-weight: 500;
     font-size: 16px;
     line-height: 16px;
-    background-image: url(/img/select.svg) !important;
+    background-image: url(/img/icons/select.svg) !important;
 }
 
 .form-select:focus {
